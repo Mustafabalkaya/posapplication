@@ -27,7 +27,7 @@ const Edit = ({
         })
       );
     } catch (error) {
-      message.error("Bir şeyler yanlış gitti.");
+     // message.error("Bir şeyler yanlış gitti.");
       console.log(error);
     }
   };
@@ -43,7 +43,7 @@ const Edit = ({
         message.success("Kategori başarıyla silindi.");
         setCategories(categories.filter((item) => item._id !== id));
       } catch (error) {
-        message.error("Bir şeyler yanlış gitti.");
+        //message.error("Bir şeyler yanlış gitti.");
         console.log(error);
       }
     }
