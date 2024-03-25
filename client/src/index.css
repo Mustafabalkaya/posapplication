@@ -2,29 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
 
 body {
   margin: 0;
   font-family: "Electrolize", sans-serif;
+  @apply bg-gray-50;
 }
+
 .ant-btn-primary {
   background-color: #1677ff;
 }
+
 .menu-link .anticon{
   display: flex;
   justify-content: center;
 }
-@media (max-width: 767px), (min-width: 768px) {
+
+@media (min-width: 768px) {
   body {
-    /* 768 pikselden daha dar veya daha geniş ekranlarda overflow'ı kontrol etmek için uygun stiller */
     overflow: hidden;
   }
 
-  .categories::-webkit-scrollbar,
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+
   .products::-webkit-scrollbar {
-    /* 768 pikselden daha dar veya daha geniş ekranlarda kaydırma çubuklarını gizlemek için uygun stiller */
     display: none;
   }
 }
