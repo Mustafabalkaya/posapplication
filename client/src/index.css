@@ -16,15 +16,16 @@ body {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 767px), (min-width: 768px) {
-  /* body içeriğinin yatay ve dikey kaydırma çubuklarını gizle */
-  body {
-    overflow: hidden;
-  }
+@media(min-width:768px){
+body{
+  overflow: hidden;
+}
 
-  /* .categories ve .products sınıflarına sahip öğelerin içerisindeki kaydırma çubuklarını gizle */
-  .categories::-webkit-scrollbar,
-  .products::-webkit-scrollbar {
-    display: none;
-  }
+
+.categories::-webkit-scrollbar{
+  display: none;
+}
+.products::-webkit-scrollbar{
+  display: none;
+}
 }
