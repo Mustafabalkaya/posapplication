@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: "Electrolize", sans-serif;
   @apply bg-gray-50;
+  overflow: hidden;
 }
 
 .ant-btn-primary {
@@ -19,16 +20,3 @@ body {
   justify-content: center;
 }
 
-@media (min-width: 768px){
-  body {
-    overflow-x: auto; /* Yatay kaydırma çubuklarını etkinleştir */
-  }
-
-  .categories::-webkit-scrollbar {
-    display: none;
-  }
-
-  .products::-webkit-scrollbar {
-    display: none;
-  }
-}
