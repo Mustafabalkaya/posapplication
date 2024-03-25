@@ -19,9 +19,7 @@ body {
   justify-content: center;
 }
 @media(max-width:767px){
-body{
-  overflow: hidden;
-}
+
 
 
 .categories::-webkit-scrollbar{
