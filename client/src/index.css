@@ -16,11 +16,7 @@ body {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 768px), screen and (max-width: 767px) {
-  body {
-      overflow: hidden;
-  }
-}
+
 
 
 
