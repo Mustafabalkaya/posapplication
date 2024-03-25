@@ -48,26 +48,28 @@ const HomePage = () => {
     <>
       <Header setSearch={setSearch} />
       {products && categories ? (
-        <div className="home px-6 flex md:flex-row flex-col justify-between gap-10 md:pb-0 pb-24 h-screen">
-          <div className="categories overflow-auto max-h-[calc(100vh_-_112px)] md:pb-10">
-            <Categories
-              categories={categories}
-              setCategories={setCategories}
-              setFiltered={setFiltered}
-              products={products}
-            />
-          </div>
-          <div className="products flex-[8] max-h-[calc(100vh_-_112px)] overflow-y-auto pb-10 min-h-[500px]">
-            <Products
-              categories={categories}
-              filtered={filtered}
-              products={products}
-              setProducts={setProducts}
-              search={search}
-            />
-          </div>
-          <div className="cart-wrapper min-w-[300px] md:-mr-[24px] md:-mt-[24px] border">
-            <CartTotals />
+        <div className="mobile-container" style={{ width: "1947px", height: "776px", overflowX: "hidden" }}>
+          <div className="home px-6 flex md:flex-row flex-col justify-between gap-10 md:pb-0 pb-24 h-screen">
+            <div className="categories overflow-auto max-h-[calc(100vh-_112px)] md:pb-10">
+              <Categories
+                categories={categories}
+                setCategories={setCategories}
+                setFiltered={setFiltered}
+                products={products}
+              />
+            </div>
+            <div className="products flex-[8] max-h-[calc(100vh-_112px)] overflow-y-auto pb-10 min-h-[500px]">
+              <Products
+                categories={categories}
+                filtered={filtered}
+                products={products}
+                setProducts={setProducts}
+                search={search}
+              />
+            </div>
+            <div className="cart-wrapper min-w-[300px] md:-mr-[24px] md:-mt-[24px] border">
+              <CartTotals />
+            </div>
           </div>
         </div>
       ) : (

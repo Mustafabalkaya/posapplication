@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
 }
-@media(max-width:500px){
+@media(min-width:768px){
 body{
   overflow: hidden;
 }
