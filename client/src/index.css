@@ -16,8 +16,10 @@ body {
   display: flex;
   justify-content: center;
 }
-
-
+@media(min-width:768px){
+body{
+  overflow: hidden;
+}
 
 
 .categories::-webkit-scrollbar{
