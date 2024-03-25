@@ -16,15 +16,9 @@ body {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 767px) {
+@media screen and (min-width: 768px), screen and (max-width: 767px) {
   body {
-    overflow: auto; /* Daha küçük ekranlarda overflow'ı otomatik yap */
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    overflow: auto; /* 768 pikselden büyük ekranlarda overflow'ı otomatik yap */
+      overflow: hidden;
   }
 }
 
