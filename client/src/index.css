@@ -19,9 +19,9 @@ body {
   justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
   body {
-    overflow: hidden;
+    overflow-x: auto; /* Yatay kaydırma çubuklarını etkinleştir */
   }
 
   .categories::-webkit-scrollbar {
