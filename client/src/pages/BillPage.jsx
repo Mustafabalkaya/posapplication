@@ -6,6 +6,7 @@ import { SearchOutlined } from "@ant-design/icons";
 import Highlighter from "react-highlight-words";
 
 const BillPage = () => {
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [billItems, setBillItems] = useState();
   const [customer, setCustomer] = useState();
@@ -186,23 +187,26 @@ const BillPage = () => {
       render: (_, record) => {
         return (
           <Button
-            type="link"
-            className="pl-0"
-            onClick={() => {
-              setIsModalOpen(true);
-              setCustomer(record);
-            }}
-            style={{
-              color: "blue", // Metin rengini mavi yapar
-              fontWeight: "bold", // Metni kalın yapar
-              textDecoration: "underline", // Metne altı çizgi ekler
-              border: "1px solid blue", // Dikdörtgen şeklinde kenarlık ekler
-              borderRadius: "4px", // Kenarlık köşelerini yuvarlar
-              padding: "4px 8px", // Buton içeriğine biraz boşluk ekler
-            }}
-          >
-            Yazdır
-          </Button>
+          type="link"
+          className="pl-0"
+          style={{
+            border: '1px solid #000', // Kenarlık rengi
+            padding: '5px 10px', // Buton içeriğine göre ayarlayabilirsiniz
+            backgroundColor: '#007bff', // Arkaplan rengi
+            cursor: 'pointer', // İmleci el işareti olarak göstermek için
+            textDecoration: 'none', // Bağlantı görünümünden kaçınmak için
+            color: '#fff', // Metin rengi
+            display: 'inline-block', // Butonun blok seviyesinde görünmesi
+            borderRadius: '4px' // Kenar yuvarlama
+          }}
+          onClick={() => {
+            setIsModalOpen(true);
+            setCustomer(record);
+          }}
+        >
+          Yazdır
+        </Button>
+        
         );
       },
     },

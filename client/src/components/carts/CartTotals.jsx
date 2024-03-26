@@ -113,7 +113,7 @@ const CartTotals = () => {
           <Button
             type="primary"
             size="large"
-            className="w-full mt-2 my-10 flex items-center justify-center"
+            className="w-full mt-2 my-20 flex items-center justify-center"
             icon={<ClearOutlined />}
             danger
             disabled={cart.cartItems.length === 0}

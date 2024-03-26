@@ -8,6 +8,7 @@ const Categories = ({ categories, setCategories, setFiltered, products }) => {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [categoryTitle, setCategoryTitle] = useState("Tümü");
+  
 
   useEffect(() => {
     if (categoryTitle === "Tümü") {

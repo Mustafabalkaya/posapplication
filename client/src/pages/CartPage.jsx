@@ -144,13 +144,13 @@ const CartPage = () => {
       title: "Ürün Adı",
       dataIndex: "title",
       key: "title",
-      ...getColumnSearchProps("title")
+      ...getColumnSearchProps("title"),
     },
     {
       title: "Kategori",
       dataIndex: "category",
       key: "category",
-      ...getColumnSearchProps("category")
+      ...getColumnSearchProps("category"),
     },
     {
       title: "Ürün Fiyatı",
@@ -218,7 +218,7 @@ const CartPage = () => {
             okText="Evet"
             cancelText="Hayır"
           >
-            <Button type="link" danger>
+            <Button type="link" danger style={{ border: "1px solid #ff4d4f", backgroundColor:"#ff0000",color:"#fff" }}>
               Sil
             </Button>
           </Popconfirm>
@@ -237,7 +237,7 @@ const CartPage = () => {
           bordered
           pagination={false}
           scroll={{
-            x: 'max-content',
+            x: 1000,
             y: 300,
           }}
         />
