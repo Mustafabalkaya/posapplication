@@ -237,7 +237,7 @@ const CartPage = () => {
           bordered
           pagination={false}
           scroll={{
-            x: 1200,
+            x: 'max-content',
             y: 300,
           }}
         />
@@ -266,7 +266,7 @@ const CartPage = () => {
               </b>
             </div>
             <Button
-              className="mt-4 w-full"
+              className="mt-4 my-4 w-full"
               type="primary"
               size="large"
               onClick={() => setIsModalOpen(true)}

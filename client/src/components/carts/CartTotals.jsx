@@ -15,7 +15,7 @@ const CartTotals = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="cart h-full max-h-[calc(100vh_-_90px)] flex flex-col">
+    <div className="cart h-full max-h-[calc(250vh_-_90px)] flex flex-col">
       <h2 className="bg-blue-600 text-center py-4 text-white font-bold tracking-wide">
         Sepetteki Ürünler
       </h2>
@@ -113,7 +113,7 @@ const CartTotals = () => {
           <Button
             type="primary"
             size="large"
-            className="w-full mt-2 flex items-center justify-center"
+            className="w-full mt-2 my-10 flex items-center justify-center"
             icon={<ClearOutlined />}
             danger
             disabled={cart.cartItems.length === 0}

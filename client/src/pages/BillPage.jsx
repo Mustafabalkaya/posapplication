@@ -130,7 +130,9 @@ const BillPage = () => {
   useEffect(() => {
     const getBills = async () => {
       try {
-        const res = await fetch(process.env.REACT_APP_SERVER_URL+"/api/bills/get-all");
+        const res = await fetch(
+          process.env.REACT_APP_SERVER_URL + "/api/bills/get-all"
+        );
         const data = await res.json();
         setBillItems(data);
       } catch (error) {
@@ -190,6 +192,14 @@ const BillPage = () => {
               setIsModalOpen(true);
               setCustomer(record);
             }}
+            style={{
+              color: "blue", // Metin rengini mavi yapar
+              fontWeight: "bold", // Metni kalın yapar
+              textDecoration: "underline", // Metne altı çizgi ekler
+              border: "1px solid blue", // Dikdörtgen şeklinde kenarlık ekler
+              borderRadius: "4px", // Kenarlık köşelerini yuvarlar
+              padding: "4px 8px", // Buton içeriğine biraz boşluk ekler
+            }}
           >
             Yazdır
           </Button>
@@ -210,7 +220,7 @@ const BillPage = () => {
             bordered
             pagination={false}
             scroll={{
-              x: 1000,
+              x: "max-content",
               y: 300,
             }}
             rowKey="_id"
