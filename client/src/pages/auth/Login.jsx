@@ -2,6 +2,8 @@ import { Button, Carousel, Checkbox, Form, Input, message } from "antd";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthCarousel from "../../components/auth/AuthCarousel";
+import "./style.css";
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -95,7 +97,7 @@ const Login = () => {
               </Button>
             </Form.Item>
           </Form>
-          <div className="flex justify-center absolute left-0 bottom-10 w-full">
+          <div className="flex justify-center absolute left-0 bottom-10 w-full link-container">
             Henüz bir hesabınız yok mu?&nbsp;
             <Link to="/register" className="text-blue-600">
               Şimdi kaydol
