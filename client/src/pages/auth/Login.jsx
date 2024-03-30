@@ -1,33 +1,11 @@
 import { Button, Carousel, Checkbox, Form, Input, message } from "antd";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthCarousel from "../../components/auth/AuthCarousel";
 
 const Login = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-  const scrollRef = useRef(null);
-
-  const handleScroll = (e) => {
-    var e0 = e.originalEvent,
-      delta = e0.wheelDelta || -e0.detail;
-
-    scrollRef.current.scrollTop += (delta < 0 ? 1 : -1) * 30;
-    e.preventDefault();
-  };
-
-  useEffect(() => {
-    const element = scrollRef.current;
-    if (element) {
-      element.addEventListener("mousewheel", handleScroll, { passive: false });
-      element.addEventListener("DOMMouseScroll", handleScroll, { passive: false });
-
-      return () => {
-        element.removeEventListener("mousewheel", handleScroll);
-        element.removeEventListener("DOMMouseScroll", handleScroll);
-      };
-    }
-  }, []);
 
   const onFinish = async (values) => {
     setLoading(true);
@@ -64,9 +42,9 @@ const Login = () => {
   };
 
   return (
-    <div className="block-window-scroll h-screen overflow-hidden" ref={scrollRef}>
-      <div className="flex justify-between h-full overflow-hidden">
-        <div ref={scrollRef} className="xl:px-20 px-10 w-full flex flex-col h-full justify-center relative block-window-scroll overflow-hidden">
+    <div className="h-screen">
+      <div className="flex justify-between h-full">
+        <div className="xl:px-20 px-10 w-full flex flex-col h-full justify-center relative">
           <h1 className="text-center text-5xl font-bold mb-2">LOGO</h1>
           <Form
             layout="vertical"
@@ -117,8 +95,8 @@ const Login = () => {
               </Button>
             </Form.Item>
           </Form>
-          <div>
-            Henüz bir hesabınız yok mu? 
+          <div className="flex justify-center absolute left-0 bottom-10 w-full">
+            Henüz bir hesabınız yok mu?&nbsp;
             <Link to="/register" className="text-blue-600">
               Şimdi kaydol
             </Link>
