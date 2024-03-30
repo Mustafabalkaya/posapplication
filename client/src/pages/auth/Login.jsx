@@ -65,7 +65,7 @@ const Login = () => {
 
   return (
     <div className="block-window-scroll h-screen overflow-hidden" ref={scrollRef}>
-      <div className="flex justify-between h-full">
+      <div className="flex justify-between h-full overflow-hidden">
         <div ref={scrollRef} className="xl:px-20 px-10 w-full flex flex-col h-full justify-center relative block-window-scroll overflow-hidden">
           <h1 className="text-center text-5xl font-bold mb-2">LOGO</h1>
           <Form
