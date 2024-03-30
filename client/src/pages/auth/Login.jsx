@@ -42,7 +42,7 @@ const Login = () => {
   };
 
   return (
-    <div className="h-screen">
+    <div className="h-screen overflow-hidden ">
       <div className="flex justify-between h-full">
         <div className="xl:px-20 px-10 w-full flex flex-col h-full justify-center relative">
           <h1 className="text-center text-5xl font-bold mb-2">LOGO</h1>
