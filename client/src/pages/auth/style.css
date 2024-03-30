@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+    .h-screen.overflow-hidden {
+      overflow-y: hidden;
+    }
+  }

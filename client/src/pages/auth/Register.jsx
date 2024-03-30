@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AuthCarousel from "../../components/auth/AuthCarousel";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import "./style.css";
 
 const Register = () => {
   const navigate = useNavigate();
