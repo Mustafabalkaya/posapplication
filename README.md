@@ -16,7 +16,7 @@ Merhaba! Bu proje, React ile geliştirilmiş bir Single Page Application (SPA) �
 
 - Ürün faturalandırma sistemi
 - Express.js ile backend geliştirme
-- API oluşturma ve parolaların hashlenmesi
+- API oluşturma ve parolaların hashlenmesi 
 
 ## Kullanıcı Deneyimi ve Veritabanı İşlemleri
 
